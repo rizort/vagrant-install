@@ -1,0 +1,1 @@
+Install nginx & PHP & MariaDB in Vagrant (VirtualBox provider)
