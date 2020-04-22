@@ -78,6 +78,7 @@ sudo sh -c "echo '\n' >> /etc/mysql/my.cnf"
 sudo sh -c "echo '[mysqld]' >> /etc/mysql/my.cnf"
 sudo sh -c "echo 'skip-networking=0' >> /etc/mysql/my.cnf"
 sudo sh -c "echo 'skip-bind-address' >> /etc/mysql/my.cnf"
+sudo sh -c "echo 'innodb_log_file_size = 128M' >> /etc/mysql/my.cnf"
 
 sudo mysql -u root -e "GRANT ALL PRIVILEGES ON *.* TO 'root'@'192.168.%' IDENTIFIED BY '12345' WITH GRANT OPTION;"
 
