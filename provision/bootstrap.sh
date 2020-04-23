@@ -109,6 +109,8 @@ fi
 php composer-setup.php --quiet
 rm composer-setup.php
 
+sudo mv composer.phar /usr/local/bin/composer
+
 message 'DONE! MACHINE IP ADDRESS IS:'
 
 hostname -I | awk '{print $2}'
