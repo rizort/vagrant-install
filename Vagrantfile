@@ -5,7 +5,7 @@ Vagrant.configure(2) do |config|
   config.vm.box = "debian/stretch64"
   config.vm.box_check_update = false
 
-  config.vm.synced_folder ".", "/vagrant", type: "virtualbox"
+  config.vm.synced_folder ".", "/vagrant"
 
   config.vm.hostname = "project.test"
   config.vm.network "private_network", ip: "192.168.20.10"
